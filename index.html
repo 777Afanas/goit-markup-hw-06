@@ -502,6 +502,7 @@
     <!-- Footer section -->
     <footer class="footer">
       <div class="container ft-container">
+        <!-- footer Logo addres -->
         <div class="lg-address">
           <a class="logo link ftr" href="/" lang="en">Web<span class="f-lg">Studio</span></a>
           <address class="address">
@@ -524,10 +525,10 @@
             </ul>
           </address>
         </div>
+        <!-- footer social -->
         <div class="ft-social">
           <h4 class="ft-subtitle">присоединяйтесь</h4>
           <ul class="social list">
-            <!-- social-item -->
             <li class="fs-item">
               <a
                 class="fs-link link"
@@ -574,6 +575,14 @@
             </li>
           </ul>
         </div>
+        <!-- footer mailing -->
+        <form class="ft-form">
+        <div class="ft-mailing">          
+          <h4 class="ft-subtitle">Подпишитесь на рассылку</h4>
+          <label>
+            <input type="text" name="E-mail" placeholder="E-mail" />
+            <button type="submit">Подписаться</button>
+        </div></form>
       </div>
     </footer>
     <!-- Modal window -->
@@ -584,6 +593,29 @@
             <use href="./images/icons/symbol-defs.svg#icon-icon-close"></use>
           </svg>
         </button>
+        <!-- Modal window form-->
+        <form class="form"><strong class="form-title">Оставьте свои данные, мы вам перезвоним</strong>
+        <div class="form-group">
+          <label class="form-label" for="user-name">Имя</label>
+          <input class="form-input" type="text" id="user-name" />
+          <svg class="form-icon" width="20" height="20">
+            <use href=""></use>
+          </svg></div>
+          <label class="form-group" for="">
+            <span class="form-label">Телефон</span>
+            <input class="form-input" type="tel" name="use-phone"/>
+          <svg class="form-icon" width="20" height="20">
+            <use href=""></use>
+          </svg>
+          </label> 
+
+          <label for="">
+            <input type="checkbox" name="" id="" />
+            <span>Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></span>
+          </label>
+
+          <button type="submit">Отправить</button>
+        </form>
       </div>
     </div>
 
