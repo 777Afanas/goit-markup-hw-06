@@ -594,27 +594,54 @@
           </svg>
         </button>
         <!-- Modal window form-->
-        <form class="form"><strong class="form-title">Оставьте свои данные, мы вам перезвоним</strong>
-        <div class="form-group">
-          <label class="form-label" for="user-name">Имя</label>
-          <input class="form-input" type="text" id="user-name" />
-          <svg class="form-icon" width="20" height="20">
+        <form class="reg-form">
+          <strong class="reg-form-title">Оставьте свои данные, мы вам перезвоним</strong>
+        <div class="reg-form-group" role="group">
+          <label class="reg-form-wrap">
+            <input class="reg-form-input" type="text" />
+            <span class="reg-form-label">Имя</span>
+            <svg class="reg-form-icon" width="20" height="20">
             <use href=""></use>
-          </svg></div>
-          <label class="form-group" for="">
-            <span class="form-label">Телефон</span>
-            <input class="form-input" type="tel" name="use-phone"/>
-          <svg class="form-icon" width="20" height="20">
+            </svg>
+          </label>
+          <label class="reg-form-wrap">
+            <input class="reg-form-input" type="text" />
+            <span class="reg-form-label">Телефон</span>
+            <svg class="reg-form-icon" width="20" height="20">
             <use href=""></use>
-          </svg>
-          </label> 
-
-          <label for="">
-            <input type="checkbox" name="" id="" />
-            <span>Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></span>
+            </svg>
+          </label>
+          <label class="reg-form-wrap">
+            <input class="reg-form-input" type="email" />
+            <span class="reg-form-label">Почта</span>
+            <svg class="reg-form-icon" width="20" height="20">
+            <use href=""></use>
+            </svg>
+          </label>
+          <label class="reg-form-wrap">
+            <input class="reg-form-input" type="textarea" />
+            <span class="reg-form-label">Комментарий</span>
+            <svg class="reg-form-icon" width="20" height="20">
+            <use href=""></use>
+            </svg>
+          </label>          
+        </div>
+       
+        <label class="reg-form-agreement">
+            <input class="" type="checkbox" name="agreement" />
+             <svg class="" width="20" height="20">
+            <use href=""></use>
+            <use href=""></use>
+            </svg>
+            <span class="reg-form-agreement-text">
+              Соглашаюсь с рассылкой и принимаю 
+              <a class="reg-form-agreement-link" href="">Условия договора</a>
+            </span>
           </label>
 
-          <button type="submit">Отправить</button>
+          <button class="reg-form-btn" type="submit">
+            Отправить
+          </button>
         </form>
       </div>
     </div>
