@@ -692,21 +692,6 @@ color: var(--main-txt-cl);
 }
 
 
-.ft-subtitle {
-    margin-bottom: 20px;
-
-    font-family: var(--secondary-font);
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: calc(16 / 14);
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-
-    color: #FFFFFF;
-
-}
-
 .social {
     display: flex;
     align-items: center;
@@ -736,6 +721,63 @@ color: var(--main-txt-cl);
 .fs-link:hover,
 .fs-link:focus {
     background-color:  #2196F3;
+}
+
+
+.ft-mailing {
+    display: block;
+    margin-left: 90px;
+    gap: 12px;
+}
+
+.ft-subtitle {
+    margin-bottom: 20px;
+
+    font-family: var(--secondary-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #FFFFFF; 
+}
+
+.ft-form-mail {
+
+    width: 358px;
+    height: 50px;
+
+    padding: 15px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+
+    background: #2F303A;
+}
+
+.ft-form-btn {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 10px;
+    padding: 10px 28px;
+
+    width: 200px;
+    height: 50px;
+
+font-weight: 700;
+font-size: 16px;
+line-height: colc(30 / 16);
+letter-spacing: 0.06em;
+
+color: #FFFFFF;
+
+background-color: #2196F3;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+
 }
 
 /* 
@@ -966,7 +1008,9 @@ user-select: none;
     left: 50%;
  
     width: 528px;
-    height: 581px;
+    min-height: 581px;
+
+    padding: 40px;
 
     background-color: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -993,3 +1037,149 @@ user-select: none;
     border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
+
+/* 
+==================
+   Modal form
+=================
+*/ 
+
+.reg-form {
+    text-align: center;
+}
+
+.reg-form-title {
+    display: block;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(23 / 20);
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--main-txt-cl);
+}
+
+.reg-form-group {
+
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
+
+.reg-form-wrap {
+    position: relative;
+    display: block;
+    margin-bottom: 10px;
+
+}
+
+.reg-form-wrap:last-child {
+    margin-bottom: 0;
+}
+
+.reg-form-label {
+    display: block;
+    text-align: left;
+    margin-bottom: 4px;    
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.01em;
+    color: var(--secondary-cl);
+}
+
+.reg-form-input,
+.reg-form-message {
+
+    width: 100%;
+    height: 40px;
+    
+    padding-left: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    outline: transparent;
+    cursor: pointer;
+}
+
+.reg-form-message {
+    resize: none; 
+    height: 120px;
+    padding: 12px 16px;
+
+}
+
+.reg-form-icon {
+    position: absolute;
+    bottom: 11px;
+    left: 12px;
+}
+
+.reg-form-agreement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 30px;
+
+    /* outline: 5px solid green; */
+}
+
+.reg-checkbox:checked + .reg-icon .reg-icon-uncheck {
+    opacity: 0;
+    
+}
+
+.reg-icon-check {
+    opacity: 0;    
+}
+
+.reg-checkbox:checked + .reg-icon .reg-icon-check {
+    opacity: 1;
+   --color1:var(--accent-cl);
+}
+
+
+.reg-form-agreement-text {
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    color: var(--secondary-cl);
+    user-select: none;
+    text-underline-position: under;
+}
+
+.reg-form-agreement-link {
+    color: #2196F3;
+}
+
+.reg-form-btn {
+display: inline-flex; 
+align-items: center;
+text-align: center; 
+padding: 10px 52px;
+
+font-family: inherit;
+font-weight: 700;
+font-size: 16px;
+line-height: calc(30 / 16); 
+letter-spacing: 0.06em;
+color: var(--btn-txt-cl);
+
+width: 200px;
+height: 50px; 
+background-color: var(--accent-cl);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+
+cursor: pointer;
+transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+
+  /* outline: 3px solid green; */ 
+}
+
+
+  /* outline: 2px solid green; */
